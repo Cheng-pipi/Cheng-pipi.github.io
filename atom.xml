@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>CR&#39;Blog</title>
   
-  
+  <subtitle>阿森纳是冠军</subtitle>
   <link href="https://cheng-pipi.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheng-pipi.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://cheng-pipi.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>CR</name>
     
   </author>
   
