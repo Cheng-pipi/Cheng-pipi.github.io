@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="article title, CR&#39;Blog">
+    <meta name="keywords" content="git基础命令, CR&#39;Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>article title | CR&#39;Blog</title>
+    <title>git基础命令 | CR&#39;Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -246,12 +246,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">article title</h1>
+                    <h1 class="description center-align post-title">git基础命令</h1>
                 </div>
             </div>
         </div>
@@ -366,9 +366,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/git/">
+                                <span class="chip bg-color">git</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -396,15 +400,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new "My New Post"</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h2 id="Git基础命令"><a href="#Git基础命令" class="headerlink" title="Git基础命令"></a>Git基础命令</h2><h3 id="拷贝项目"><a href="#拷贝项目" class="headerlink" title="拷贝项目"></a>拷贝项目</h3><pre><code class="bash">git clone 仓库地址</code></pre>
+<h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><pre><code class="bash">git branch dev</code></pre>
+<p>master：主分支，一般都不会在此分支上开发项目</p>
+<p>dev：开发分支，一般在此分支上开发</p>
+<h3 id="创建并进入分支"><a href="#创建并进入分支" class="headerlink" title="创建并进入分支"></a>创建并进入分支</h3><pre><code class="bash">git checkout -b name</code></pre>
+<h3 id="切分支"><a href="#切分支" class="headerlink" title="切分支"></a>切分支</h3><pre><code>git checkout name</code></pre>
+<h3 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h3><pre><code class="bash">git status</code></pre>
+<h3 id="添加所有文件"><a href="#添加所有文件" class="headerlink" title="添加所有文件"></a>添加所有文件</h3><pre><code>git add .</code></pre>
+<h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><pre><code>git commit -m '这里是当前提交的描述'</code></pre>
+<h3 id="拉取"><a href="#拉取" class="headerlink" title="拉取"></a>拉取</h3><pre><code>git pull        </code></pre>
+<h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><pre><code>git push</code></pre>
+<h3 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h3><pre><code>git branch --list</code></pre>
+<h3 id="查看分支（包干远程分支）"><a href="#查看分支（包干远程分支）" class="headerlink" title="查看分支（包干远程分支）"></a>查看分支（包干远程分支）</h3><pre><code>git branch -a</code></pre>
+<h3 id="版本分支"><a href="#版本分支" class="headerlink" title="版本分支"></a>版本分支</h3><p>建于当前dev分支下面,feature-vue_amin-V1.0.0-20200912，其中，</p>
+<p>feature：描述当前分支类型（需求）</p>
+<p>vue_admin：项目名称</p>
+<p>V1.0.0：版本号</p>
+<p>20200912：创建分支日期</p>
+<pre><code>git checkout -b feature-vue_amin-V1.0.0-20200912
+git push
+git push --set-upstream origin feature-vue_amin-V1.0.0-20200912</code></pre>
+<h3 id="bug分支"><a href="#bug分支" class="headerlink" title="bug分支"></a>bug分支</h3><p>建立于当前版本分支下面</p>
+<pre><code></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -448,7 +466,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cheng-pipi.github.io/2020/09/10/article-title/">https://cheng-pipi.github.io/2020/09/10/article-title/</a>
+                    <a href="https://cheng-pipi.github.io/2020/09/10/git/">https://cheng-pipi.github.io/2020/09/10/git/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -485,7 +503,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/git/">
+                                    <span class="chip bg-color">git</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -701,15 +723,19 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Vue3.0笔记">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Vue3.0笔记——1">
                         
-                        <span class="card-title">Vue3.0笔记</span>
+                        <span class="card-title">Vue3.0笔记——1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            安装node.js（官网下载安装即可）查看版本号
+node -v
+npm -v
+出现版本号即安装成功。（如果未出现，重启电脑试试，node8、9或以上版本）
+全局安装vue-cli3.0脚手架卸载：如果已经全局安装了旧的版本的vue-cli
                         
                     </div>
                     <div class="publish-info">
@@ -973,6 +999,13 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+	
+	<!-- 雪花特效 -->
+	
+	<script type="text/javascript" src="/libs/others/snow.js"></script>
+	
+
+
 
 </body>
 
