@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Vue3.0笔记1_项目构建</title>
+      <link href="/2020/09/12/vue3-0/"/>
+      <url>/2020/09/12/vue3-0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装node-js（官网下载安装即可）"><a href="#安装node-js（官网下载安装即可）" class="headerlink" title="安装node.js（官网下载安装即可）"></a>安装node.js（官网下载安装即可）</h2><p>查看版本号</p><pre><code>node -vnpm -v</code></pre><p>出现版本号即安装成功。（如果未出现，重启电脑试试，node8、9或以上版本）</p><h2 id="全局安装vue-cli3-0脚手架"><a href="#全局安装vue-cli3-0脚手架" class="headerlink" title="全局安装vue-cli3.0脚手架"></a>全局安装vue-cli3.0脚手架</h2><p>卸载：如果已经全局安装了旧的版本的vue-cli，需要先卸载：</p><pre><code>npm uninstall vue-cli -g</code></pre><p>安装</p><pre><code>npm install -g @vue/cli</code></pre><p>查看版本号，出现版本号即安装成功</p><pre><code>vue -V</code></pre><h2 id="构建项目"><a href="#构建项目" class="headerlink" title="构建项目"></a>构建项目</h2><p>配置信息要选择Merge（合并），不然git中的内容会消失，项目需要的东西要手动选择，选择：Babel,Router,Vuex,CSS-Pre-processors,Linter / Formatter</p><pre><code>vue create vue_admin</code></pre><h2 id="路由是否采用history模式"><a href="#路由是否采用history模式" class="headerlink" title="路由是否采用history模式"></a>路由是否采用history模式</h2><p>hash ——即地址栏URL中的#符号，如：<a href="http://www.abc.com/#/head">http://www.abc.com/#/head</a></p><p>history ——利用了HTML5 History Interface中新增的pushState()和replaceState()方法。（这个方法是面试中常问到的，怎么去除URL中的#，此方法需要后端Apache或Nginx进行简单的路由配置，否则会报404）</p><p>注：这两个配置就是解决URL中有没有#的问题</p><pre><code>(Requires proper server setup for index fallback in production) (Y/n) </code></pre><h2 id="css预编译器"><a href="#css预编译器" class="headerlink" title="css预编译器"></a>css预编译器</h2><p>选择Sass/SCSS (with node-sass)之后 Pick a linter / formatter config: Prettier</p><h2 id="选择何时进行代码检测"><a href="#选择何时进行代码检测" class="headerlink" title="选择何时进行代码检测"></a>选择何时进行代码检测</h2><p>选择Lint on save，保存的时候进行监测</p><h2 id="选择Babel，PostCSS，ESLint等配置文件存放的位置"><a href="#选择Babel，PostCSS，ESLint等配置文件存放的位置" class="headerlink" title="选择Babel，PostCSS，ESLint等配置文件存放的位置"></a>选择Babel，PostCSS，ESLint等配置文件存放的位置</h2><p>选择In dedicated config files</p><h2 id="最后是否保存选择的配置"><a href="#最后是否保存选择的配置" class="headerlink" title="最后是否保存选择的配置"></a>最后是否保存选择的配置</h2><p>选择不保存，下次重新配置</p><h2 id="完整选择截图"><a href="#完整选择截图" class="headerlink" title="完整选择截图"></a>完整选择截图</h2><p><img src="https://raw.githubusercontent.com/Cheng-pipi/Cheng-pipi.github.iogithub/master/vue3-0/%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E9%80%89%E6%8B%A9.png"></p><pre><code>cd vue_adminnpm run serve</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>皮皮不可以看</title>
       <link href="/2020/09/10/pipi/"/>
       <url>/2020/09/10/pipi/</url>
@@ -30,19 +49,6 @@
             <tag> git </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Vue3.0笔记——1</title>
-      <link href="/2020/09/10/hello-world/"/>
-      <url>/2020/09/10/hello-world/</url>
-      
-        <content type="html"><![CDATA[<h2 id="安装node-js（官网下载安装即可）"><a href="#安装node-js（官网下载安装即可）" class="headerlink" title="安装node.js（官网下载安装即可）"></a>安装node.js（官网下载安装即可）</h2><p>查看版本号</p><pre><code>node -vnpm -v</code></pre><p>出现版本号即安装成功。（如果未出现，重启电脑试试，node8、9或以上版本）</p><h2 id="全局安装vue-cli3-0脚手架"><a href="#全局安装vue-cli3-0脚手架" class="headerlink" title="全局安装vue-cli3.0脚手架"></a>全局安装vue-cli3.0脚手架</h2><p>卸载：如果已经全局安装了旧的版本的vue-cli，需要先卸载：</p><pre><code>npm uninstall vue-cli -g</code></pre><p>安装</p><pre><code>npm install -g @vue/cli</code></pre><p>查看版本号，出现版本号即安装成功</p><pre><code>vue -V</code></pre><h2 id="构建项目"><a href="#构建项目" class="headerlink" title="构建项目"></a>构建项目</h2><p>配置信息要选择Merge（合并），不然git中的内容会消失</p><pre><code>vue create vue_admin</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
       
     </entry>
     
